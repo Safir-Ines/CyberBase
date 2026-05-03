@@ -1,0 +1,15 @@
+{
+  "name": "cyberbase-monolith",
+  "version": "1.0.0",
+  "description": "Enterprise Security Governance & Maturity Operating System",
+  "main": "backend/server.js",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd backend && npm start",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
